@@ -5,21 +5,8 @@
         <title>재고 페이지</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-        <script language="JavasSript">
-            var categoryAry=new Array();
-            categoryAry[0]= document.createElement('button');
-            categoryAry[0].value="기본";
-            categoryAry[1]= document.createElement("button");
-            categoryAry[1].value="전체보기";
-            
-            function plus_Bt_Click(){
-                /* prompt(문자열, 초기값) */
-                var input_value = prompt("추가할 카테고리 명을 입력해주세요.", "카테고리 명");
-                /* if(name_value == true) else false */
-                if(name_value) alert("추가된 카테고리는 "+input_value+"입니다.");
-                else alert("카테고리 추가가 취소되었습니다.");
 
-            }
+        <script src="ex.js" type="text/javascript">        
         </script>
         
     </head>
@@ -28,7 +15,7 @@
         
         <div class="ButGroup">
             <span class="fa-stack fa-2x" onclick="plus_Bt_Click()"> 
-                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="far fa-circle fa-stack-2x" ></i>
                 <i class="fas fa-plus fa-stack-1x fa-inverse" style="color:black"></i>        
             </span> 
             <span class="fa-stack fa-2x" onclick="alert('마이너스버튼입니다.\n마이너스버튼입니다.');"> 
@@ -40,16 +27,16 @@
                 <i class="fas fa-stream fa-stack-1x fa-inverse" style="color:black"></i>        
             </span> 
         </div>
+        <div id="ex" onclick="zz()">바보멍청이</div>
+        <br><br><br>
         <div>
             <button value="버튼">이잉</button>
         </div>
-        <script language="JavasSript">
-            //categoryAry 재 정의
-            
-            for(var i=0;i<categoryAry.length();i++){
-                document.body.appendChild(categoryAry[i]);
-            }
-        </script>
+        <br><br><br>
+        <div>
+            <input type='button' value='확인' />
+        </div>
+        
       
 
     </body>
