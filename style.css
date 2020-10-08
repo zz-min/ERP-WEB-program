@@ -1,4 +1,4 @@
-#TitleName{
+#MainTitle{
     font-size: 160px;
     text-align: center;
     margin-top:15px;
@@ -29,4 +29,13 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+  }
+  #SubTitle{
+    font-size: 80px;
+    text-align: center;
+    margin-top:15px;
+  }
+.ButGroup{
+      width: 800px;
+      float:right;
   }
