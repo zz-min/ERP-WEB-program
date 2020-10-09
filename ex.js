@@ -8,6 +8,7 @@ var num=4;/*나중에는 배열크기로 num초기화 */
     function btn_gen() {// 버튼 객체 생성
         //alert("bbb"+catArray[0].toString()+"배열끝");
         alert("배열크기=>"+catArray.length);
+        
         // for(var i=0; i<catArray.length; i++){
         //     $("#kiki").append("<input type='button' value='동적버튼생성"+catArray[i].value+"'/>");
         // }    
