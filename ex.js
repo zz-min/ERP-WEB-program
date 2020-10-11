@@ -21,20 +21,23 @@ var num=4;/*나중에는 배열크기로 num초기화 */
         $(".btnNew").empty();
         for(var i=1; i<catArray.length; i++){
             var j=i+1;
-             $(".btnNew").append("<input type='button' value='"+catArray[i].toString()+"' id='btn"+j+"' onclick='button_click();'/>");
+             $(".btnNew").append("<input type='button' value='"+catArray[i].toString()+"' id='btn"+j+"' onclick='button_click("+j+");'/>");
              
             var str = document.getElementById("btn"+j);
             btnStyle(str);
          }    
 
-         $(".btnNew").append("<input type='button' value='"+catArray[0].toString()+"' id='btn1' onclick='button_click();'/>");         
+         $(".btnNew").append("<input type='button' value='"+catArray[0].toString()+"' id='btn1' onclick='button_click(1);'/>");         
          btnStyle(btn1);
-    }
-    
-        function button_click(){
-            
+    }  
+        function button_click(number){
+            alert(number+"번째 버튼클릭함수작동중");
+            //window.open('btn'+number+'_page.html');
+            location.href='btn'+number+'_page.html';
         }
-   
+
+        //현재탭으로 열기  onClick="location.href='http://www.daum.net'"
+        //새로운탭으로 열기 onClick="window.open('http://www.daum.net')"
 
     
     function plus_Bt_Click(){
