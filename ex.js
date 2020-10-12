@@ -30,11 +30,12 @@ var num=4;/*나중에는 배열크기로 num초기화 */
          $(".btnNew").append("<input type='button' value='"+catArray[0].toString()+"' id='btn1' onclick='button_click(1);'/>");         
          btnStyle(btn1);
     }  
-        function button_click(number){
-            alert(number+"번째 버튼클릭함수작동중");
-            //window.open('btn'+number+'_page.html');
-            location.href='btn'+number+'_page.html';
-        }
+
+    function button_click(number){
+        alert(number+"번째 버튼클릭함수작동중");
+        //window.open('btn'+number+'_page.html');
+        location.href='btn'+number+'_page.html';
+    }
 
         //현재탭으로 열기  onClick="location.href='http://www.daum.net'"
         //새로운탭으로 열기 onClick="window.open('http://www.daum.net')"

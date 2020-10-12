@@ -39,6 +39,12 @@
       width:500px;
       float:right;
   }
+  .ListGroup{
+    margin-top: 100px;
+  }
+  .ListGroup img{
+    margin-top: 50px;
+  }
   .btnSpace{
     margin-top: 50px;
     margin-left: auto; margin-right: auto;
