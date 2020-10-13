@@ -10,8 +10,17 @@
         <script src="ex.js" type="text/javascript"></script>   
 </head>
 <body>
-    btn1_page
-    <div id="SubTitle"> ERP 가상제목</div>
+    <script>
+    
+
+    function titleRenaming(){
+        var fileValue = $("#excelFile").val().split("\\");
+        var fileName = fileValue[fileValue.length-1]; // 파일명
+        $("#SubTitle").append("<h1>"+fileName+"</h1>");
+    }
+    titleRenaming();
+    </script> 
+    <div id="SubTitle"> </div>
         
     <div class="ButGroup">
         <span class="fa-stack fa-2x" onclick="plus_Bt_Click()"> 
